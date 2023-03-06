@@ -21,5 +21,6 @@ service postfix restart
 
 apt install ./vagrant_2.2.9_x86_64.deb
 apt install virtualbox
+apt-get install python3-pip
 python3 -m pip install  ansible
 
