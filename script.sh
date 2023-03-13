@@ -11,7 +11,7 @@ echo "127.0.0.1 gitlab.local" >> /etc/hosts
 gitlab-ctl reconfigure
 
 
-useradd -m -p gituser -s /bin/bash gituser
+useradd -m -p gituser200023 -s /bin/bash gituser
 
 postconf -e "mydestination = gitlab.local,localhost.localdomain, localhost"
 postconf -e "inet_interfaces = all"
