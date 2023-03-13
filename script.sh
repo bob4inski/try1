@@ -2,8 +2,7 @@
 apt-get update 
 apt-get install -y curl openssh-server ca-certificates tzdata perl postfix mailutils
 
-
-curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-сe/script.deb.sh | sudo bash
+curl -s https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh | sudo bash
 
 sudo EXTERNAL_URL="https://gitlab.local" apt-get install gitlab-сe
 echo "127.0.0.1 gitlab.local" >> /etc/hosts
